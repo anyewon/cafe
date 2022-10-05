@@ -1,0 +1,445 @@
+header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    height: 70px;
+    border-bottom: 1px solid #fff;
+    z-index: 99;
+}
+.logo{
+    margin-left: 80px;
+    float: left;
+}
+.logo a{
+    display: block;
+    color: #fff;
+    font-size: 30px;
+    padding: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#nav{
+    position: absolute;
+    width: 100%;
+    z-index: -99;
+}
+#main_nav{
+    height: 70px;
+    line-height: 80px;
+    overflow: hidden;
+    width: 960px;
+    margin: 0 auto;
+}
+#main_nav ul{
+    width: 960px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+#main_nav ul li{
+    width: 192px;
+    float: left;
+}
+.hover-li{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+}
+#main_nav ul li a:hover{
+    color: #555;
+}
+
+#sub{
+    width: 100%;
+    position: absolute;
+    top: 70px;
+    background: #fff;
+    z-index: 99;
+}
+#sub_menu{
+    overflow: hidden;
+    width: 960px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+#sub_menu .menu{
+    width: 192px;
+    float: left;
+}
+#sub_menu .menu li{
+    margin-top: 20px;
+}
+#sub_menu .menu li a{
+    color: #000;
+    font-size: 14px;
+    font-weight: 600;
+}
+#sub_menu .menu li a:hover{
+    color: rgb(230, 169, 1);
+}
+
+
+
+
+.fontawesome{
+    margin-right: 30px;
+    height: 100%;
+    float: left;
+    border-right: 1px solid #fff;
+    height: 70px;
+    padding: 10px;
+}
+.fontawesome i{
+    font-size: 25px;
+    color: #fff;
+    padding: 0 4px;
+    cursor: pointer;
+}
+.allmenu{
+    float: left;
+    padding: 10px;
+}
+.fbox {
+    float: right;
+    line-height: 50px;
+}
+.fontawesome i:hover{
+    color: #555;
+}
+
+
+
+/* allmenu */
+.menu-content{
+    width: 100%;
+    height: 0;
+    background: rgb(254,217,0);
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    transition: 0.6s;
+    z-index: 99;
+}
+.closebtn{
+    position: absolute;
+    right: 100px;
+    top: 5px;
+    color: #fff;
+    font-size: 50px;
+}
+.content-logo{
+    width: 20%;
+    height: 100%;
+    float: left;
+    padding: 50px;
+}
+.content-logo a{
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;
+}
+.menu-content>ul{
+    position: relative;
+    float: left;
+    top: 25%;
+}
+.menu-content ul >a{
+    display: block;
+    text-align: center;
+    padding: 20px 100px;
+    border-bottom: 1px solid black;
+    font-weight: 600;
+    margin-right: 10px;
+    font-size: 20px;
+    transition: 0.3s;
+}
+.menu-content li{
+    text-align: center;
+    font-size: 14px;
+    margin-top: 10px;
+}
+.menu-content ul >a:hover{
+    color: #fff;
+}
+.menu-content li a:hover{
+    color: #fff;
+}
+
+
+
+/* 배너 부분 */
+#content1{
+    width: 100%;
+    height: 100%;
+}
+.banner_prev, .banner_next{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 50px;
+    color: #fff;
+    cursor: pointer;
+}
+.banner_prev{
+    left: 0;
+}
+.banner_next{
+    right: 0;
+}
+
+
+
+.section2{
+    width: 100%;
+    height: 1000px;
+}
+.section2 h1{
+    font-size: 80px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 150px 0 70px 150px;
+}
+.checkbox ul{
+    margin-left: 150px;
+    position: relative;
+    width: 700px;
+}
+.checkbox li input[type="radio"]{
+    position: absolute;
+    left: -999px;
+}
+.checkbox ul label{
+    display: inline-block;
+    padding: 12px 20px;
+    cursor: pointer;
+    font-size: 35px;
+    color: #bbb;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 20px 0;
+}
+.checkbox .content{
+    display: none;
+    position: absolute;
+    left: 90%;
+    top: -150px;
+}
+.content ul{
+    float: left;
+}
+.content li{
+    float: left;
+    transition: 0.5s;
+}
+.content li img{
+    width: 300px;
+    height: 300px;
+    margin: 15px;
+    cursor: pointer;
+}
+.checkbox input[type="radio"]:checked + label{
+    color: #000;
+    text-decoration: underline;
+}
+.checkbox input[type="radio"]:checked ~ .content{
+    display: block;
+}
+.content li:hover{
+    transform: scale(1.11);
+}
+
+
+/* section3 */
+.section3{
+    width: 100%;
+    height: 1000px;
+}
+.section3 ul {
+    position: relative;
+    width: 100%;
+}
+.section3 ul li{
+    float: left;
+    margin-top: 900px;
+}
+.section3 ul li:first-child{
+    margin-left: 870px;
+}
+.section3 li input[type="radio"]{
+    position: absolute;
+    left: -999px;
+}
+.section3 ul label{
+    display: block;
+    background: #555;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 15px;
+    transition: 0.5s;
+}
+.section3 label:hover{
+    background: rgb(254,217,0);
+}
+.section3 .sec-content{
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 30px;
+    width: 100%;
+    overflow: hidden;
+}
+.section3 .sec-content img{
+    width: 100%;
+    height: 100%;
+}
+.section3 input[type="radio"]:checked + label{
+    width: 50px;
+    background: rgb(254,217,0);
+    border-radius: 15px;
+}
+.section3 input[type="radio"]:checked ~ .sec-content{
+    display: block;
+}
+
+
+.section4{
+    width: 100%;
+    height: 1000px;
+    padding-top: 300px;
+    background: #f1f1f1;
+}
+.section4 .section4-center{
+    width: 1500px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.section4-content{
+    width: 1500px;
+}
+.section4-content h2{
+    width: 300px;
+    margin: 0 auto;
+    font-size: 35px;
+    font-weight: 600;
+    text-align: center;
+}
+.section4-content p{
+    font-size: 16px;
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px 0;
+    text-align: center;
+}
+.section4-center .section4-img p{
+    background: rgb(0,0,0,0.6);
+    color: #fff;
+    font-size: 16px;
+}
+.section4-center .section4-img{
+    display: block;
+    float: left;
+    text-align: center;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+    margin: 100px 0 0 55px;
+}
+.section4-center .section4-img:hover{
+    transform: scale(1.11);
+
+}
+.section4-content .section4-btn{
+    display: block;
+    margin: 0 auto;
+    border: none;
+    outline: none;
+    background: #555;
+    color: #fff;
+    width: 200px;
+    height: 50px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.section5{
+    width: 100%;
+    height: 1000px;
+    background: url(images/section5.jpg) no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.section5 h3{
+    position: absolute;
+    left: 50%;
+    top: 200px;
+    transform: translateX(-50%);
+    color: #fff;
+    font-size: 35px;
+}
+.section5 h4{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 270px;
+    color: #fff;
+    font-size: 16px;
+}
+.section5 .p-center{
+    width: 1400px;
+    position: absolute;
+    left: 50%;
+    top: 400px;
+    transform: translateX(-50%);
+}
+.section5 p{
+    float: left;
+    height: 200px;
+    width: 23.5%;
+    margin-left: 2%;
+    background: rgba(255,255,255,0.6);
+    padding: 25px;
+    cursor: pointer;
+}
+.section5 p:first-child{
+    margin-left: 0;
+}
+.section5 p .title{
+    font-size: 16px;
+    font-weight: 600;
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 280px;
+    height: 25px;
+    cursor: pointer;
+}
+.section5 p .title:hover{
+    color: rgb(254,217,0);
+}
+.section5 p .date{
+    display: block;
+    color: #555;
+    margin-top: 30px;
+    font-size: 14px;
+}
+footer{
+    width: 100%;
+    height: 200px;
+}
+footer p{
+    width: 1400px;
+    margin: 0 auto;
+    padding-top: 30px;
+    line-height: 30px;
+    font-size: 14px;
+}
+
